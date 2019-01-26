@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_degrade_claro"
+        tools:context=".activity.CadastroLoginActivity">
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/cadNome"
+            android:background="@drawable/background_caixadetexto"
+            android:padding="9dp"
+            android:hint="Nome Completo"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textCapWords"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/cadMatricula"
+            android:background="@drawable/background_caixadetexto"
+            android:padding="9dp"
+            app:layout_constraintStart_toStartOf="parent" android:maxLength="9"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/cad_telefone"
+            app:layout_constraintHorizontal_chainStyle="packed" android:layout_marginStart="16dp"
+            android:hint="Matrícula" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/cadNome"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/cad_telefone"
+            android:background="@drawable/background_caixadetexto"
+            android:padding="9dp"
+            app:layout_constraintStart_toEndOf="@+id/cadMatricula" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginStart="16dp" android:hint="Telefone"
+            app:layout_constraintBottom_toBottomOf="@+id/cadMatricula"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/cadEmpresa"
+            android:background="@drawable/background_caixadetexto"
+            android:padding="9dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/cadFunção" android:hint="Empresa" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/cadMatricula" android:inputType="textCapWords"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/cadFunção"
+            android:background="@drawable/background_caixadetexto"
+            android:padding="9dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/cadEmpresa"
+            android:layout_marginStart="16dp" app:layout_constraintHorizontal_bias="0.5" android:hint="Função"
+            app:layout_constraintBottom_toBottomOf="@+id/cadEmpresa" android:inputType="textCapWords"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/cadEmail"
+            android:background="@drawable/background_caixadetexto"
+            android:padding="9dp"
+            android:hint="E-mail" android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/cadEmpresa"
+            android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/cadSenha"
+            android:background="@drawable/background_caixadetexto"
+            android:padding="9dp"
+            android:hint="Senha" android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/cadEmail"
+            android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
+    <Button
+            android:text="Cadastrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCadastrarUsuario"
+            android:background="@drawable/background_btn"
+            android:padding="9dp"
+            android:elevation="30dp"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="30dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/cadSenha" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.155" android:shadowColor="@color/colorAccent"/>
+    <ProgressBar
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarcadastrousuario" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone" android:elevation="@dimen/fab_margin"/>
+</android.support.constraint.ConstraintLayout>

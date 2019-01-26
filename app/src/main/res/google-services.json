@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "472265286023",
+    "firebase_url": "https://cursofirebase-bc608.firebaseio.com",
+    "project_id": "cursofirebase-bc608",
+    "storage_bucket": "cursofirebase-bc608.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472265286023:android:fcc4c08d1ef6e099",
+        "android_client_info": {
+          "package_name": "com.example.jucivan.firebase2curso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472265286023-c901bgbqsgq24uabctgvpktmdqkvfn54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jucivan.firebase2curso",
+            "certificate_hash": "cd802598748cc1299a092f5e06cd01bc9427ffc2"
+          }
+        },
+        {
+          "client_id": "472265286023-ora4ke53r2nf88rmnbi00spkiqautp58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuCO4lVgA8-kvR_BJaSpkySgwNwQo30dQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472265286023-ora4ke53r2nf88rmnbi00spkiqautp58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

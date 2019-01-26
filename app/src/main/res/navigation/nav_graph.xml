@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/main2Activity">
+
+    <activity android:id="@+id/main2Activity" android:name="com.example.jucivan.omrkeep.activity.Main2Activity"
+              android:label="activity_main2" tools:layout="@layout/activity_main2"/>
+    <fragment android:id="@+id/pesquisaFragment" android:name="com.example.jucivan.omrkeep.Fragment.PesquisaFragment"
+              android:label="fragment_pesquisa" tools:layout="@layout/fragment_pesquisa">
+        <action android:id="@+id/action_pesquisaFragment_to_main2Activity" app:destination="@id/main2Activity"/>
+    </fragment>
+    <fragment android:id="@+id/historicoAcessoFragment"
+              android:name="com.example.jucivan.omrkeep.Fragment.HistoricoAcessoFragment"
+              android:label="fragment_historico_acesso" tools:layout="@layout/fragment_historico_acesso">
+        <action android:id="@+id/action_historicoAcessoFragment_to_main2Activity" app:destination="@id/main2Activity"/>
+    </fragment>
+    <fragment android:id="@+id/reportarProblemaFragment"
+              android:name="com.example.jucivan.omrkeep.Fragment.ReportarProblemaFragment"
+              android:label="fragment_reportar_problema" tools:layout="@layout/fragment_reportar_problema">
+        <action android:id="@+id/action_reportarProblemaFragment_to_main2Activity" app:destination="@id/main2Activity"/>
+    </fragment>
+    <fragment android:id="@+id/solicitaAcessoFragment"
+              android:name="com.example.jucivan.omrkeep.Fragment.SolicitaAcessoFragment"
+              android:label="fragment_solicita_acesso" tools:layout="@layout/fragment_solicita_acesso">
+        <action android:id="@+id/action_solicitaAcessoFragment_to_main2Activity" app:destination="@id/main2Activity"/>
+    </fragment>
+    <activity android:id="@+id/mensegensActivity" android:name="com.example.jucivan.omrkeep.activity.MensegensActivity"
+              android:label="activity_mensegens" tools:layout="@layout/activity_mensegens"/>
+</navigation>

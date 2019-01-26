@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <item
+            android:id="@+id/app_bar_search_sites"
+            android:title="Pesquisar Sites"
+            app:actionViewClass="android.widget.SearchView">
+    </item>
+    <group
+            android:id="@+id/menu_infra_grupo" android:checkableBehavior="single">
+        <item android:id="@+id/menu_users_infra" android:title="@string/atvidade_de_infra">
+            <menu>
+                <group
+                        android:checkableBehavior="single" android:id="@+id/menu_infra_itens">
+                    <item android:title="@string/txt_preventivas" android:id="@+id/menu_infra_preventivas"
+                          android:icon="@android:drawable/ic_menu_edit"/>
+                    <item android:title="@string/txt_melhorias" android:icon="@android:drawable/ic_menu_day"
+                          android:id="@+id/menu_infra_melhorias"/>
+                    <item android:title="@string/txt_atividades_pendentes" android:id="@+id/menu_infra_ativ_pendentes"
+                          android:icon="@android:drawable/ic_menu_week"/>
+                    <item android:title="@string/txt_reportar_problemas" android:id="@+id/menu_infra_problemas"
+                          android:icon="@android:drawable/ic_menu_report_image"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+    <group
+            android:id="@+id/menu_omr_grupo">
+        <item android:title="@string/txt_omr_NE" android:id="@+id/menu_users_OMR">
+            <menu>
+                <group android:checkableBehavior="single"
+                       android:id="@+id/menu_omr_itens">
+                    <item android:title="@string/txt_melhorias" android:icon="@android:drawable/ic_menu_day"
+                          android:id="@+id/menu_OMR_melhorias"/>
+                    <item android:title="@string/txt_preventivas" android:id="@+id/menu_preventivas"
+                          android:icon="@android:drawable/ic_menu_edit"/>
+                    <item android:title="@string/txt_atividades_pendentes" android:id="@+id/menu_omr_ativ_pendentes"
+                          android:icon="@android:drawable/ic_menu_week"/>
+                    <item android:title="@string/txt_reportar_problemas" android:id="@+id/menu_omr_problemas"
+                          android:icon="@android:drawable/ic_menu_report_image"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+    <item android:title="Controle de acessos"
+          android:id="@+id/menu_user_comum"
+    >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/solEntrada"
+                      android:title="Solicitar Entrada"
+                      android:icon="@android:drawable/ic_dialog_email"/>
+
+                <item android:title="Histórico de Acessos"
+                      android:id="@+id/entrada_historico"
+                      android:icon="@drawable/ic_wrap_text_black_24dp"/>
+                <item
+                        android:id="@+id/nav_camera"
+                        android:icon="@drawable/ic_menu_camera"
+                        android:title="Import" android:visible="false"/>
+                <item
+                        android:id="@+id/nav_gallery"
+                        android:icon="@drawable/ic_menu_gallery"
+                        android:title="Gallery" android:visible="false"/>
+                <item
+                        android:id="@+id/nav_slideshow"
+                        android:icon="@drawable/ic_menu_slideshow"
+                        android:title="Slideshow" android:visible="false"/>
+                <item android:title="Reportar Problemas" android:id="@+id/menu_inconformidade"
+                      android:icon="@drawable/ic_report_problem_black_24dp"/>
+                <item
+                        android:id="@+id/nav_manage"
+                        android:icon="@drawable/ic_menu_manage"
+                        android:title="Tools"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Comunicação">
+        <menu>
+            <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Compartilhar App"/>
+            <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Conversar"/>
+        </menu>
+    </item>
+
+</menu>

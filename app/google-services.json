@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1015400429444",
+    "firebase_url": "https://omrkeep.firebaseio.com",
+    "project_id": "omrkeep",
+    "storage_bucket": "omrkeep.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015400429444:android:4d6e9efec7c60f4b",
+        "android_client_info": {
+          "package_name": "com.example.jucivan.omrkeep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015400429444-k9r12ceoq0mrcl3gg63lp0flm454cpfs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jucivan.omrkeep",
+            "certificate_hash": "cd802598748cc1299a092f5e06cd01bc9427ffc2"
+          }
+        },
+        {
+          "client_id": "1015400429444-g29eislrf09294ufq01uk1661t8aphok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACmru6oD7gIoRBVNN1SUFe2ROwQlSdZvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015400429444-g29eislrf09294ufq01uk1661t8aphok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
