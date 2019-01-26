@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "1015400429444-mqqo2jqj3c091t7fqkt6th2o4ukpfhli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jucivan.omrkeep",
+            "certificate_hash": "26e7cd8cd58c08982d26b0756ca9c75e82ad6ed6"
+          }
+        },
+        {
           "client_id": "1015400429444-g29eislrf09294ufq01uk1661t8aphok.apps.googleusercontent.com",
           "client_type": 3
         }
